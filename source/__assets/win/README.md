@@ -137,11 +137,16 @@ package, delete the signed copy, and remove the test certificate from `Cert:\Cur
 
 ## Notes
 
-- **Version.** Both flavours use `<Major>.<Minor>.<IgBundleBuild>.0`, derived from
-  `Directory.Build.props` (e.g. short `10.0.2` + build `535` -> `10.0.535.0`). The
-  build number lives in the 3rd part because the Microsoft Store reserves the 4th
-  (revision) part, which must be `0`. Bump `<IgBundleBuild>` per release. Override
-  the whole value with `-PackageVersion`.
+- **Version.** The two flavours differ, because only the Store constrains the value.
+  Sideload packs `<IgVersion>` verbatim (e.g. `10.0.6.906`), matching the MSI and the
+  About box. msstore must leave the 4th (revision) part `0`, which the Store reserves,
+  so it packs `<Major>.<Minor>.<IgBundleBuild>.0` (e.g. short `10.0.6` + build `906` ->
+  `10.0.906.0`) and drops the patch. Both come from `Directory.Build.props`; override
+  either with `-PackageVersion`. Windows refuses to install a package older than the
+  installed one, so keep each flavour's version rising across releases: sideload
+  packages up to `10.0.6.906` shipped as `10.0.<build>.0`, which the new scheme sorts
+  *below*, so the first release on it needs a higher major/minor (or a
+  `-PackageVersion` above `10.0.906.0`) or existing installs cannot upgrade.
 - **File type associations** are kept in sync with `Const.IMAGE_FORMATS`
   ([`ImageGlass.Lib/Common/Types/Const.cs`](../../ImageGlass.Lib/Common/Types/Const.cs)).
   If that list changes, update the `<uap:FileType>` entries in the manifest template.
