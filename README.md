@@ -29,21 +29,8 @@ ImageGlass is a fast, modern, open-source image viewer built for Windows, macOS,
 
 </div>
 
-
-<div align="center">
-
-<a href="https://imageglass.org/pricing">
-  <img width="225" height="37" alt="Get ImageGlass" src="https://github.com/user-attachments/assets/a44993c4-8fbb-4209-8341-be6996059b5a" />
-</a>
-
-</div>
-
 <br/>
 
-
-## Pricing
-
-ImageGlass Classic is free and open-source. Pro unlocks advanced workflow tools, and the commercial plans add a commercial-use license with tax invoicing and priority support.
 
 <table>
 <tr valign="top">
