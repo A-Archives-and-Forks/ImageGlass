@@ -41,6 +41,24 @@ ImageGlass is a fast, modern, open-source image viewer built for Windows, macOS,
 <br/>
 
 
+## Pricing
+
+ImageGlass Classic is free and open-source. Pro unlocks advanced workflow tools, and the commercial plans add a commercial-use license with tax invoicing and priority support.
+
+<table>
+<tr valign="top">
+<td width="25%" align="center"><a target="_blank" href="https://buy.stripe.com/dRmfZh2wJaCSaOB1h7fUQ09?client_reference_id=pro-individual__onetime__imageglass-10-0-6-906-66"><img src=".github/assets/pricing/pro-individual.svg" width="100%" alt="Pro Individual: $14.90 one-time, 1 user or device, Pro license, Pro v10.x updates"/></a></td>
+<td width="25%" align="center"><a target="_blank" href="https://buy.stripe.com/6oU8wP5IVh1g4qdcZPfUQ0a?client_reference_id=pro-team__onetime__imageglass-10-0-6-906-66"><img src=".github/assets/pricing/pro-team.svg" width="100%" alt="Pro Team: $69 one-time, up to 3 users or devices, Commercial Pro license, Pro v10.x updates"/></a></td>
+<td width="25%" align="center"><a target="_blank" href="https://buy.stripe.com/14A4gz8V73aq5uhcZPfUQ0b?client_reference_id=pro-business__yearly__imageglass-10-0-6-906-66"><img src=".github/assets/pricing/pro-business.svg" width="100%" alt="Pro Business: from $99 per seat per year, subscription, Commercial Pro license, all versions, priority support"/></a></td>
+<td width="25%" align="center"><a target="_blank" href="https://imageglass.org/download"><img src=".github/assets/pricing/classic.svg" width="100%" alt="Classic: free, unlimited users, GPLv3 license, all versions, community support"/></a></td>
+</tr>
+</table>
+
+👉 Compare all plans and features at [imageglass.org/pricing](https://imageglass.org/pricing).
+
+<br/>
+
+
 > [!Caution]
 > ### Security Alert: Fake Repositories and AI Threat Mitigation
 > Automated malicious campaigns are actively deploying AI tools to impersonate trusted software. They stand up fake GitHub profiles and Gists designed to trick users into downloading compromised packages.
